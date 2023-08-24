@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 		<PropertyGroup>
 				<!-- Either "preview" (.NET 8) or "stable" (.NET 7) -->
-				<MauiVersionSelector>stable</MauiVersionSelector>
+				<MauiVersionSelector>preview</MauiVersionSelector>
 		</PropertyGroup>
 
 		<PropertyGroup Condition="$(MauiVersionSelector) == 'preview'">
