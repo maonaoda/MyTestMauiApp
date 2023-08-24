@@ -28,18 +28,18 @@
             </StackLayout>
 
             <HorizontalStackLayout BackgroundColor="Green" HorizontalOptions="Fill">
-                <Label Text="Label1" FontSize="16" TextColor="Black"
+                <!--<Label Text="Label1" FontSize="16" TextColor="Black"
                        HorizontalOptions="Start"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"/>-->
                 <Label Text="Label2" FontSize="26" TextColor="pink"
                        HorizontalOptions="EndAndExpand"
                        VerticalOptions="Center"/>
             </HorizontalStackLayout>
 
             <StackLayout Orientation="Horizontal" BackgroundColor="Green" HorizontalOptions="Fill">
-                <Label Text="Label1" FontSize="16" TextColor="Black"
+                <!--<Label Text="Label1" FontSize="16" TextColor="Black"
                        HorizontalOptions="Start"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"/>-->
                 <Label Text="Label2" FontSize="26" TextColor="pink"
                        HorizontalOptions="EndAndExpand"
                        VerticalOptions="Center"/>
