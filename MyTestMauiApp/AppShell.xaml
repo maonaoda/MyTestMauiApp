@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MyTestMauiApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MyTestMauiApp"
+    xmlns:pages="clr-namespace:MyTestMauiApp.Pages"
+    xmlns:sys="clr-namespace:System;assembly=netstandard"
+    Title="MyTestMauiApp">
+    <Shell.FlyoutHeader>
+        <Label Margin="{OnPlatform Default='0,0,0,12',
+                                   iOS='0',
+                                   MacCatalyst='0'}"
+               Padding="{OnPlatform Default='4,0',
+                                    iOS='4, 100, 4, 0',
+                                    MacCatalyst='4, 100, 4, 0'}"
+               FontSize="24"
+               HorizontalTextAlignment="Start"
+               Text="My Test Bugs"
+               VerticalTextAlignment="Center" />
+
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Welcome"
+                Route="WelcomePage"
+                Icon="{OnPlatform Default='dotnet_bot.png', MacCatalyst={x:Null}}">
+        <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate pages:MainPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Bug0001"
+                Route="Bug0001Page"
+                Icon="{OnPlatform Default='dotnet_bot.png', MacCatalyst={x:Null}}">
+        <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate pages:Bug0001Page}" />
+    </FlyoutItem>
+
+
+    <Shell.FlyoutFooter>
+        <Label Padding="4"
+               HorizontalOptions="End"
+               Text="{Binding Source={x:Static sys:DateTime.Now}, StringFormat='{0:yyyy}'}"
+               VerticalOptions="End" />
+    </Shell.FlyoutFooter>
+</Shell>
