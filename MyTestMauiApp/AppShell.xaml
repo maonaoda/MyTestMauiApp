@@ -37,6 +37,13 @@
                 ContentTemplate="{DataTemplate pages:Bug0001Page}" />
     </FlyoutItem>
 
+    <FlyoutItem Title="Bug0002"
+                Route="Bug0002Page"
+                Icon="{OnPlatform Default='dotnet_bot.png', MacCatalyst={x:Null}}">
+        <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate pages:Bug0002Page}" />
+    </FlyoutItem>
 
     <Shell.FlyoutFooter>
         <Label Padding="4"

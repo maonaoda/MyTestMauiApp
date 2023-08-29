@@ -27,21 +27,15 @@
                        VerticalOptions="Center"/>
             </StackLayout>
 
-            <HorizontalStackLayout BackgroundColor="Green" HorizontalOptions="Fill">
-                <!--<Label Text="Label1" FontSize="16" TextColor="Black"
-                       HorizontalOptions="Start"
-                       VerticalOptions="Center"/>-->
+            <HorizontalStackLayout BackgroundColor="Green" HorizontalOptions="FillAndExpand">
                 <Label Text="Label2" FontSize="26" TextColor="pink"
-                       HorizontalOptions="EndAndExpand"
+                       HorizontalOptions="Center"
                        VerticalOptions="Center"/>
             </HorizontalStackLayout>
 
             <StackLayout Orientation="Horizontal" BackgroundColor="Green" HorizontalOptions="Fill">
-                <!--<Label Text="Label1" FontSize="16" TextColor="Black"
-                       HorizontalOptions="Start"
-                       VerticalOptions="Center"/>-->
                 <Label Text="Label2" FontSize="26" TextColor="pink"
-                       HorizontalOptions="EndAndExpand"
+                       HorizontalOptions="Start"
                        VerticalOptions="Center"/>
             </StackLayout>
         </VerticalStackLayout>

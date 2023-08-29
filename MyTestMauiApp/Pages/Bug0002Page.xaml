@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyTestMauiApp.Pages.Bug0002Page">
+    <ContentPage.Content>
+        <AbsoluteLayout VerticalOptions="Fill">
+            <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <StackLayout Spacing="0" Padding="15, 0" Margin="0, 20, 0, 20">
+                    <ScrollView>
+                        <StackLayout Spacing="0" Padding="15, 0" Margin="0, 20, 0, 20">
+                            <Label Text="AAAAAAAAAAAAAA&#x0a;BBBBBBBBBBBBBBBBBBBBB" TextColor="#111111" FontSize="20" FontAttributes="Bold" LineHeight="1.2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
